@@ -8,7 +8,6 @@ export default function MovieSearchPage() {
     function handleSubmit(e) {
         e.preventDefault();
         const url = "https://api.themoviedb.org/3/search/movie?query=" + e.target.search.value + "&include_adult=false&language=en-US";
-        console.log(url);
         submit(url, {
             method: 'GET',
             headers: {
